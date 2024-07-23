@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".swiper", {
     loop: true,
-    slidesPerView: 1.4,
-    spaceBetween: 20,
+    slidesPerView: 1.54,
+    spaceBetween: 40,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
     breakpoints: {
       897: {
         centeredSlides: true,
-        slidesPerView: 3.5,
-        spaceBetween: 24,
+        slidesPerView: 4.3,
+        spaceBetween: 40,
       },
     },
   });
