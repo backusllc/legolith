@@ -1,23 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.querySelector(".swiper-wrapper");
-
-  // SP版の場合、JavaScriptを無効にする
   if (window.innerWidth > 898) {
-    // 初期スクロール位置を設定（例：スライドの幅 / 2）
-    scrollContainer.scrollLeft = 120; // 適切な初期値を設定
+    scrollContainer.scrollLeft = 120;
   }
-
 });
 
-
-//最新の年度を表示
 document.addEventListener("DOMContentLoaded", () => {
   const currentYearElement = document.getElementById("current-year");
   const currentYear = new Date().getFullYear();
   currentYearElement.textContent = currentYear;
 });
 
-//アニメーション
 document.addEventListener("DOMContentLoaded", function () {
   const targets = document.querySelectorAll(".fade");
   for (let i = targets.length; i--;) {
@@ -33,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//swiper
 document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".swiper", {
     loop: true,
